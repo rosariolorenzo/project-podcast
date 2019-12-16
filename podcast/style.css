@@ -76,6 +76,9 @@ header {
     font-weight: lighter;
 }
 /*SECTION TITULO*/
+.cointeiner-title-hidden-mobile{
+    display: none;
+}
 .conteiner-title{
     display:flex;
     flex-direction: column;
