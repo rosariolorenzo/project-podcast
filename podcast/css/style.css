@@ -360,7 +360,8 @@ footer::before{
 .social-icons i{
     margin: 16px 19px 31px;
 }
-  @media only screen and (min-width: 1440px){
+  @media (min-width: 992px){
+
     header { 
         height: 80px;  
     }
@@ -461,22 +462,28 @@ footer::before{
         font-size: 48px;
         padding: 0;
     }
-    .container-podcast{
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
+    .list-podcast{
+        display: grid;
+        grid-template-columns: 584px 584px;
+        padding: 100px;
+        grid-column-gap:70px;
+        grid-row-gap:72px;
+    } 
+
+    .podcast-episodes:first-child{
+        margin-top:0px;
     }
+
+    .podcast-episodes:last-child{
+        margin-bottom: 0px;
+    } 
     .container-podcast::before{
         height: 1042.6px;
+        width: 100%;
         -webkit-clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
         clip-path: polygon(0% 15%, 100% 0%, 100% 85%, 0% 100%);
     }
-    .podcast-episodes{
-        width: 584px;
-        height:232px;
-        margin: 36px;
-    }
+   
     /* IMG PHONE*/
     .img-phone{
         width: 457.6px;
@@ -501,7 +508,9 @@ footer::before{
     /*SECTION GALLERY*/
     #interview{
         font-size: 48px;
-        margin: 64px 759px 0 200px;
+        margin: 64px 759px 36px 200px;
+        height:62px;
+        width: 481px;
     }
     .gallery-interview{
         display: grid;
